@@ -1,0 +1,40 @@
+/* Write your code here: */
+
+/* GROUP */
+h1,h2{
+    color: blueviolet;
+}
+
+/* div>p{
+    color: firebrick;
+} */
+
+/* <<<<<< or >>> */
+
+/* CHILD */
+.box>p{
+    color: firebrick;
+}
+
+/* DESCENDENT */
+.box li{
+    color: blue;
+}   
+/* descendent can work on child which is two levels deep where child won't work 
+like we cannot use .box > li here as li is 2 levels deep 
+
+*/
+
+/* CHAINING */
+li.done{
+    color: seagreen;
+} 
+/* chaining is done on very sepcific portion you can include elements, ids, 
+classes all to select for eg - h1#id.class.subclass */
+
+/* COMBINING SELECTORS */
+ul p.done{
+    font-size: 0.5rem;
+}
+/* ul is an ancestor selector while p.done is using chaining */
+
