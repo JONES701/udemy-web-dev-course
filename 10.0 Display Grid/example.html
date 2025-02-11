@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Grid vs Flexbox</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      grid-auto-rows: 500px;
+    }
+
+    .container>* {
+      background-color: cadetblue;
+    }
+
+    .babushka{
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-auto-rows: 100px;
+    }
+    .lightred{
+      background-color: lightcoral;
+      /* margin: 0; */
+      padding: 20px;
+    }
+
+    .blue{
+      background-color: lightblue;
+      /* margin: 0; */
+      padding: 15px;
+    }
+
+    .peach{
+      background-color: peachpuff;
+      /* margin: 0; */
+      padding: 10px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="one">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut error ea neque! Minima fuga deserunt delectus
+        corrupti molestiae, eos esse quos vel reiciendis neque quibusdam!</p>
+    </div>
+    <div class="two">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eius, consequuntur facere iure error fugiat
+        architecto illo, repudiandae magni doloremque non molestiae qui expedita iste!</p>
+    </div>
+    <div class="three">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae porro a harum in voluptate reprehenderit
+        necessitatibus, placeat cumque est odio accusamus! Quaerat nesciunt tempora dolorum voluptate ex dolor natus
+        fuga possimus totam ipsam, saepe odio nemo officia accusamus nam voluptates magnam soluta autem animi quia
+        veniam praesentium excepturi? Incidunt, quia.</p>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, expedita ex culpa corporis quidem amet ducimus
+        aut facilis harum atque veniam similique facere quia odio exercitationem, aliquam voluptates at molestiae!</p>
+    </div>
+
+    <div>
+      <p>ola amigos the days are going past with no serious achievements or accomplishments or even any goals. 
+        Lack of responsibility, discipline, courage, seriousness will only lead you away from your aim. 
+        This way it is impossible to keep going on with a real aim in life. If you have something real for 
+        it then do it with all your heart or it is just a waste of time, time which can be utilized very
+        well, time which is passing by without check and time which is vitally important.
+      </p>
+    </div>
+  </div>
+
+  <div class="babushka">
+    <div class="lightred">
+      <p> error ea neque! Minima fuga deserunt delectus
+        corrupti molestiae, eos esse quos vel reiciendis neque quibusdam!</p>
+    </div>
+    <div class="blue">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eius, 
+        consequuntur facere iure error fugiat architecto illo, 
+        repudian doloremque non molestiae qui expedita iste!</p>
+    </div>
+    <div class="peach">
+      <p>Lorem ipsum, dolor sit amet cons</p>
+    </div>
+    <div>
+      <p>Lo Esse, expedita ex culpa corporis quidem amet ducimus
+        aut  quia odio exercitationem, aliquam voluptates at molestiae!</p>
+    </div>
+
+    <div class="blue">
+      <p>Lo Esse, expedita ex culpa corporis quidem amet ducimus
+        aut  quia odio exercitationem, aliquam voluptates at molestiae!</p>
+    </div>
+
+    <div class="peach">
+      <p>Lo Esse, expedita ex culpa corporis quidem amet ducimus
+        aut  quia odio exercitationem, aliquam voluptates at molestiae!</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
